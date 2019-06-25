@@ -17,7 +17,7 @@ namespace GitProjekt
             InitializeComponent();
         }
 
-        double a, b;
+        double a, b,ans;
         int count;
 
         private void action()
@@ -25,20 +25,24 @@ namespace GitProjekt
             switch (count)
             {
                 case 1:
-                    b = a + Convert.ToDouble(textBox1.Text);
-                    textBox1.Text = b.ToString();
+                    b = Convert.ToDouble(textBox1.Text);
+                    ans = a + b;
+                    textBox1.Text = ans.ToString();
                     break;
                 case 2:
-                    b = a - Convert.ToDouble(textBox1.Text);
-                    textBox1.Text = b.ToString();
+                    b = Convert.ToDouble(textBox1.Text);
+                    ans = a - b;
+                    textBox1.Text = ans.ToString();
                     break;
                 case 3:
-                    b = a * Convert.ToDouble(textBox1.Text);
-                    textBox1.Text = b.ToString();
+                    b = Convert.ToDouble(textBox1.Text);
+                    ans = a * b;
+                    textBox1.Text = ans.ToString();
                     break;
                 case 4:
-                    b = a / Convert.ToDouble(textBox1.Text);
-                    textBox1.Text = b.ToString();
+                    b = Convert.ToDouble(textBox1.Text);
+                    ans = a / b;
+                    textBox1.Text = ans.ToString();
                     break;
 
                 default:
