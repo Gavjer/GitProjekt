@@ -26,7 +26,9 @@ namespace GitProjekt
             {
                 case 1:
                     b = a + Convert.ToDouble(textBox1.Text);
+                    listBox1.Items.Add($"{a} + {b} = {a + b}");
                     textBox1.Text = b.ToString();
+                    
                     break;
                 case 2:
                     b = a - Convert.ToDouble(textBox1.Text);
